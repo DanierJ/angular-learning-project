@@ -7,10 +7,10 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-  @Output() optionClicked = new EventEmitter<{optionClicked: string}>();
+  @Output() featureSelected = new EventEmitter<string>();
 
-  onClicked(event: MouseEvent) {
-    this.optionClicked.emit({optionClicked: event.target.innerText});
+  onSelect(feature: string) {
+    this.featureSelected.emit(feature);
   }
 
   ngOnInit(): void {

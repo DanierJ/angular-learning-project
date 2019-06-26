@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-project';
-  option = '';
+  loadedFeature = 'recipe';
 
-  onClicked(optionClick: {optionClicked: string}) {
-    this.option = optionClick.optionClicked;
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
