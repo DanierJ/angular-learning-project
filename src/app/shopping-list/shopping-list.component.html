@@ -1,14 +1,14 @@
 <div class="row">
   <div class="col-10">
-    <app-shopping-edit></app-shopping-edit>
+    <app-shopping-edit (ingredientData)="addIngredient($event)"></app-shopping-edit>
     <hr>
     <div class="list-group">
       <a
         href="#"
         class="list-group-item list-group-item-action"
-        *ngFor="let ingridient of ingridients"
+        *ngFor="let ingredient of ingredients"
       >
-        {{ingridient.name}} ({{ingridient.amount}})
+        {{ingredient.name}} ({{ingredient.amount}})
       </a>
 
     </div>
