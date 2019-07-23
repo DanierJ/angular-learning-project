@@ -19,7 +19,10 @@
       <!--[ngClass]="{show: buttonDrop.classList.contains('open')}-->
       <div class="dropdown-menu" aria-labelledby="triggerId">
         <button class="dropdown-item" (click)="onAddToShoppingList()">Add Ingridients to Shopping List</button>
-        <button class="dropdown-item">edit Recipe</button>
+        <button
+          class="dropdown-item"
+          routerLink="edit"
+        >edit Recipe</button>
         <button class="dropdown-item">delete Recipe</button>
       </div>
     </div>
