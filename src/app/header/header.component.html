@@ -12,20 +12,20 @@
           <a class="nav-link"
              routerLink="/recipes"
              routerLinkActive="active"
-             (click)="onSelect('recipe')" >Recipes <span class="sr-only">(current)</span></a>
+          >Recipes <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item" role="presentation">
           <a class="nav-link"
              routerLink="/shopping-list"
              routerLinkActive="active"
-             (click)="onSelect('shopping-list')">Shopping List</a>
+          >Shopping List</a>
         </li>
         <li class="nav-item dropdown ml-auto" role="presentation">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
+          <a class="nav-link dropdown-toggle" id="dropdownId"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown>Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">Save Data</a>
-            <a class="dropdown-item" href="#">Fetch Data</a>
+            <a class="dropdown-item">Save Data</a>
+            <a class="dropdown-item">Fetch Data</a>
           </div>
         </li>
       </ul>
