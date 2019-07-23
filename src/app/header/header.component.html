@@ -8,13 +8,19 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav w-100 mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" (click)="onSelect('recipe')" >Recipes <span class="sr-only">(current)</span></a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link"
+             routerLink="/recipes"
+             routerLinkActive="active"
+             (click)="onSelect('recipe')" >Recipes <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link"
+             routerLink="/shopping-list"
+             routerLinkActive="active"
+             (click)="onSelect('shopping-list')">Shopping List</a>
         </li>
-        <li class="nav-item dropdown ml-auto">
+        <li class="nav-item dropdown ml-auto" role="presentation">
           <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown>Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
