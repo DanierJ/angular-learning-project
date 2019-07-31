@@ -50,9 +50,9 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   //  this.clearInput();
   }
 
-  private clearInput(): void {
-   /* this.amountIngredient.nativeElement.value = '';
-    this.nameIngredient.nativeElement.value = '';*/
+  private onClear(): void {
+    this.editMode = false;
+    this.shoppingListForm.reset();
   }
 
   ngOnDestroy(): void {
