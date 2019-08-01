@@ -1,6 +1,6 @@
 <div class="row mt-2">
     <div class="col">
-      <form>
+      <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
         <div class="row">
           <div class="col">
             <button type="submit" class="btn btn-success mr-2">Save</button>
@@ -15,6 +15,7 @@
                 type="text"
                 id="name"
                 class="form-control"
+                formControlName="name"
               >
             </div>
           </div>
@@ -27,6 +28,7 @@
                 type="text"
                 id="imagePath"
                 class="form-control"
+                formControlName="imagePath"
               >
             </div>
           </div>
@@ -34,7 +36,7 @@
         <div class="row">
           <div class="col">
             <div class="form-group">
-              <img src="" alt="" class="img-thumbnail">
+              <img [src]="recipeForm.value.imagePath" alt="" class="img-thumbnail">
             </div>
           </div>
         </div>
@@ -46,6 +48,7 @@
                 type="text"
                 id="description"
                 class="form-control"
+                formControlName="description"
               ></textarea>
             </div>
           </div>
