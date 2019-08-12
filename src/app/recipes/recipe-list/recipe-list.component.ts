@@ -11,7 +11,7 @@ import {Subscription} from 'rxjs';
 })
 
 export class RecipeListComponent implements OnInit, OnDestroy {
- @Output() recipeDetail = new EventEmitter<Recipe>();
+ /*@Output() recipeDetail = new EventEmitter<Recipe>();*/
  recipes: Recipe[];
  recipesChangeSuscription: Subscription;
 
