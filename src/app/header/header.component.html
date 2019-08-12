@@ -20,9 +20,16 @@
              routerLinkActive="active"
           >Shopping List</a>
         </li>
-        <li class="nav-item dropdown ml-auto" role="presentation">
+        <li class="nav-item ml-auto" role="presentation">
+          <a
+            routerLink="/signup"
+            class="nav-link">
+            Register
+          </a>
+        </li>
+        <li class="nav-item dropdown" role="presentation">
           <a class="nav-link dropdown-toggle" id="dropdownId"
-             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown>Manage</a>
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown style="cursor: pointer">Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
             <button class="dropdown-item" (click)="onSaveData()">Save Data</button>
             <button class="dropdown-item" (click)="onFetchData()">Fetch Data</button>
