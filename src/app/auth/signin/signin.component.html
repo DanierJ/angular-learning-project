@@ -1,3 +1,29 @@
-<p>
-  signin works!
-</p>
+<div class="row">
+  <div class="col-12 col-md-8 mx-auto">
+    <form (ngSubmit)="onSignIn(form)" #form = "ngForm">
+      <div class="form-group">
+        <label for="email">Mail</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          id="email"
+          aria-describedby="emailHelpId"
+          placeholder="yourEmail@company.com"
+          ngModel
+        >
+        <small id="emailHelpId" class="form-text text-muted">We do not share any data with third parties</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="password"
+          placeholder="*****">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+  </div>
+</div>
