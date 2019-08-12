@@ -16,6 +16,7 @@ import {DataStorageService} from './shared/data-storage.service';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import {RecipesModule} from './recipes/recipes.module';
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {RecipesModule} from './recipes/recipes.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RecipesModule
+    RecipesModule,
+    SharedModule
   ],
   providers: [ShoppingListService, RecipeService, DataStorageService],
   bootstrap: [AppComponent]
