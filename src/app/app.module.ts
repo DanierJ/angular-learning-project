@@ -14,6 +14,7 @@ import {RecipesModule} from './recipes/recipes.module';
 import {SharedModule} from './shared/shared.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
 import {AuthModule} from './auth/auth.module';
+import {AuthService} from './auth/auth.service';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import {AuthModule} from './auth/auth.module';
     ShoppingListModule,
     AuthModule
   ],
-  providers: [ShoppingListService, RecipeService, DataStorageService],
+  providers: [ShoppingListService, RecipeService, DataStorageService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
