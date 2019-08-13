@@ -36,7 +36,16 @@
             </a>
           </li>
         </ng-template>
-        <li class="nav-item dropdown ml-auto" role="presentation" *ngIf="authService.isAuthenticated()">
+        <li class="nav-item ml-auto" role="presentation" *ngIf="authService.isAuthenticated()">
+          <a
+            class="nav-link"
+            (click)="onLogOut()"
+            style="cursor: pointer"
+          >
+            Log out
+          </a>
+        </li>
+        <li class="nav-item dropdown" role="presentation" *ngIf="authService.isAuthenticated()">
           <a class="nav-link dropdown-toggle" id="dropdownId"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown style="cursor: pointer">Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
