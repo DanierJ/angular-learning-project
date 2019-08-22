@@ -20,7 +20,7 @@
              routerLinkActive="active"
           >Shopping List</a>
         </li>
-        <ng-template [ngIf]="!authService.isAuthenticated()">
+        <ng-template [ngIf]="!getAuthService().isAuthenticated()">
           <li class="nav-item ml-auto" role="presentation">
             <a
               routerLink="/signup"
@@ -36,7 +36,7 @@
             </a>
           </li>
         </ng-template>
-        <li class="nav-item ml-auto" role="presentation" *ngIf="authService.isAuthenticated()">
+        <li class="nav-item ml-auto" role="presentation" *ngIf="getAuthService().isAuthenticated()">
           <a
             class="nav-link"
             (click)="onLogOut()"
@@ -45,7 +45,7 @@
             Log out
           </a>
         </li>
-        <li class="nav-item dropdown" role="presentation" *ngIf="authService.isAuthenticated()">
+        <li class="nav-item dropdown" role="presentation" *ngIf="getAuthService().isAuthenticated()">
           <a class="nav-link dropdown-toggle" id="dropdownId"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown style="cursor: pointer">Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
